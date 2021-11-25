@@ -1,0 +1,53 @@
+/* TODO: Example 03 (Activity 4) CSS goes here */
+
+body {
+    margin: 0 auto 1rem;
+    width: 80%;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    border: 1px solid lightgray;
+    padding: .5rem;
+    border-radius: 1rem;
+    flex-flow: column nowrap;
+}
+
+.gallery > .top {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+div {
+    flex: 1;
+}
+
+.gallery > .top > .left, .gallery > .top > .middle, .gallery > .top > .right {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.image {
+    margin: 5px;
+}
+
+.gallery > .top > .right > .top, .gallery > .top > .right > .bottom {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.gallery > .bottom {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvc3R5bGVzaGVldHMvZXhhbXBsZTAzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0EsQyIsImZpbGUiOiJzdHlsZXNoZWV0cy9leGFtcGxlMDMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogVE9ETzogRXhhbXBsZSAwMyAoQWN0aXZpdHkgNCkgQ1NTIGdvZXMgaGVyZSAqL1xyXG5cclxuYm9keSB7XHJcbiAgICBtYXJnaW46IDAgYXV0byAxcmVtO1xyXG4gICAgd2lkdGg6IDgwJTtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLmdhbGxlcnkge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcclxuICAgIHBhZGRpbmc6IC41cmVtO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMXJlbTtcclxuICAgIGZsZXgtZmxvdzogY29sdW1uIG5vd3JhcDtcclxufVxyXG5cclxuLmdhbGxlcnkgPiAudG9wIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWZsb3c6IHJvdyBub3dyYXA7XHJcbn1cclxuXHJcbmltZyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIGJvcmRlci1yYWRpdXM6IC41cmVtO1xyXG4gICAgLW8tb2JqZWN0LWZpdDogY292ZXI7XHJcbiAgICAgICBvYmplY3QtZml0OiBjb3ZlcjtcclxufVxyXG5cclxuZGl2IHtcclxuICAgIGZsZXg6IDE7XHJcbn1cclxuXHJcbi5nYWxsZXJ5ID4gLnRvcCA+IC5sZWZ0LCAuZ2FsbGVyeSA+IC50b3AgPiAubWlkZGxlLCAuZ2FsbGVyeSA+IC50b3AgPiAucmlnaHQge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZmxvdzogY29sdW1uIG5vd3JhcDtcclxufVxyXG5cclxuLmltYWdlIHtcclxuICAgIG1hcmdpbjogNXB4O1xyXG59XHJcblxyXG4uZ2FsbGVyeSA+IC50b3AgPiAucmlnaHQgPiAudG9wLCAuZ2FsbGVyeSA+IC50b3AgPiAucmlnaHQgPiAuYm90dG9tIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWZsb3c6IHJvdyBub3dyYXA7XHJcbn1cclxuXHJcbi5nYWxsZXJ5ID4gLmJvdHRvbSB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1mbG93OiByb3cgbm93cmFwO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ==*/

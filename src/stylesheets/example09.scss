@@ -1,0 +1,39 @@
+/* TODO: Example 09 (Activity 10) CSS goes here */
+
+//Before Bootsrap
+$primary: #563d76;
+$secondary: lightgrey;
+
+//Bootstrap
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+
+$custom-colors: (
+    "ok": blue,
+    "cancel": red
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/containers";
+
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/buttons";
+
+
+//After Bootstrap
+.message {
+    @extend .alert;
+    @include alert-variant(maroon, black, white);
+}
+
+@each $color, $value in $theme-colors {
+    .alert-#{$color} {
+        box-shadow: 3px 3px darkgrey;
+    }
+}

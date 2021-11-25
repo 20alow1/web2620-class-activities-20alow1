@@ -1,0 +1,142 @@
+/* TODO: Example 01 (Activity 2) CSS goes here */
+
+:root{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+header {
+    font-size: 2rem;
+    padding: 0 1rem;
+    height: 100px;
+    line-height: 100px;
+    background-color: lightblue;
+}
+
+footer {
+    font-size: 1.5rem;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+#main-container {
+    display: table;
+    height: calc(100vh - 160px);
+    width: 100%;
+}
+
+#aside-col {
+    display: none;
+}
+
+#main-col {
+    display: table-cell;
+    background-color: rgb(74, 74, 175);
+}
+
+#main-container .box {
+    height: 100px;
+    line-height: 100px;
+    background-color: rgb(172, 172, 172);
+    text-align: center;
+    color: black;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#main-container [selected] {
+    color: yellow;
+    background-color: rgb(75, 75, 75);
+}
+
+#main-col [type="featured"] {
+    color: rgb(74, 74, 175);
+    background-color: yellow;
+}
+
+/* Different Size Devices */
+/* Medium Devices */
+@media all and (min-width: 600px) {
+    #main-col .box {
+        float: left;
+        margin: 1rem 0 0 1rem;
+        width: calc((100% - 3rem) / 2);
+    }
+}
+
+/* Large Devices */
+@media all and (min-width: 800px) {
+    #main-col {
+        width: 70%;
+    }
+
+    #main-container .box {
+        float: left;
+        margin: 1rem 0 0 1rem;
+    }
+
+    #main-col .box {
+        width: calc((100% - 4rem) / 3);
+    }
+
+    #aside-col .box {
+        width: calc((100% - 3rem) / 2);
+    }
+
+    #aside-col {
+        display: table-cell;
+        background-color: lightyellow;
+        vertical-align: top;
+    }
+
+    ul.links {
+        list-style: none;
+        padding: 1rem;
+    }
+
+    ul.links > li {
+        color: white;
+        padding: .5rem;
+        background-color: rgb(0, 0, 82);
+        margin-bottom: .3rem;
+        text-align: center;
+    }
+
+    ul.links > li > a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    ul.links > li > a:link {
+        color: white;
+    }
+
+    ul.links > li > a:visited {
+        color:rgb(74, 74, 175);
+    }
+
+    ul.links > li > a:active {
+        color: yellow;
+    }
+
+    ul.links > li:hover {
+        background-color: rgb(43, 43, 121);
+    }
+}

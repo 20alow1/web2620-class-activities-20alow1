@@ -1,0 +1,135 @@
+/* TODO: Example 04 (Activity 5) CSS goes here */
+body {
+    width: 80%;
+     margin: 0 auto 1rem;
+     text-align: center;
+ }
+
+img {
+     width: 100%;
+     height: 100%;
+     border-radius: .5rem;
+     object-fit: cover;
+}
+
+/* 5 rows and 7 columns*/
+
+.container {
+     display: grid;
+     grid-template-rows: 2fr repeat(2, 1fr) 2fr 3fr;
+     /*grid-template-columns: 6fr repeat(2, 3fr) 2fr repeat(2, 1fr) 2fr;*/
+     gap: 10px;
+     border: 1px solid lightgray;
+     padding: .5rem;
+     border-radius: 1rem;
+}
+
+img:nth-child(1) {
+    /* row start / column start / row end / column end */ 
+    grid-area: 1 / 1 / span 1 / span 6;
+ }
+
+img:nth-child(2) {
+     grid-area: 1 / 7 / span 2 / span 6;
+ }
+
+img:nth-child(3) {
+    grid-area: 1 / 13 / span 1 / span 2;
+}
+
+img:nth-child(4) {
+    grid-area: 1 / 15 / span 1 / span 2;
+}
+
+img:nth-child(5) {
+    grid-area: 1 / 17 / span 1 / span 2;
+}
+
+img:nth-child(6) {
+    grid-area: 2 / 1 / span 2 / span 6;
+}
+
+img:nth-child(7) {
+    grid-area: 2 / 13 / span 2 / span 6;
+}
+
+img:nth-child(8) {
+    grid-area: 4 / 1 / span 1 / span 6;
+}
+
+img:nth-child(9) {
+    grid-area: 3 / 7 / span 2 / span 6;
+}
+
+img:nth-child(10) {
+    grid-area: 4 / 13 / span 1 / span 3;
+}
+
+img:nth-child(11) {
+    grid-area: 4 / 16 / span 1 / span 3;
+}
+
+img:nth-child(12) {
+    grid-area: 5 / 1 / span 1 / span 9;
+}
+
+img:nth-child(13) {
+    grid-area: 5 / 10 / span 1 / span 9;
+}
+
+
+
+/* With grid-template-columns
+img:nth-child(1) {
+    /* row start / column start / row end / column end 
+    grid-area: 1 / 1 / 2 / 2;
+ }
+
+img:nth-child(2) {
+     grid-area: 1 / 2 / span 2 / span 2;
+ }
+
+img:nth-child(3) {
+    grid-area: 1 / 4 / span 1 / span 1;
+}
+
+img:nth-child(4) {
+    grid-area: 1 / 5 / span 1 / span 2;
+}
+
+img:nth-child(5) {
+    grid-area: 1 / 7 / span 1 / span 1;
+}
+
+img:nth-child(6) {
+    grid-area: 2 / 1 / span 2 / span 1;
+}
+
+img:nth-child(7) {
+    grid-area: 2 / 4 / span 2 / span 4;
+}
+
+img:nth-child(8) {
+    grid-area: 4 / 1 / span 1 / span 1;
+}
+
+img:nth-child(9) {
+    grid-area: 3 / 2 / span 2 / span 2;
+}
+
+img:nth-child(10) {
+    grid-area: 4 / 4 / span 1 / span 2;
+}
+
+img:nth-child(11) {
+    grid-area: 4 / 6 / span 1 / span 2;
+}
+
+img:nth-child(12) {
+    grid-area: 5 / 1 / span 1 / span 2;
+}
+
+img:nth-child(13) {
+    grid-area: 5 / 3 / span 1 / span 5;
+}
+*/

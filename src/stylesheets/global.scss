@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+
+  $basic-color: #ccc;
+
+  $button-kinds: basic primary secondary success error warning;
+  $button-colors: #ccc, #007bff, #6c757d, #28a745, #dc3545, #ffc107;
+
+  /* Variable types
+  $numberVar: 100;
+  $numberVar2: $numberVar * 2;
+
+  $booleanVar: $numberVar * 2 == 200;
+
+  $layout: grid;
+  */

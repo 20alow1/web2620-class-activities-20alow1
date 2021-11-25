@@ -1,0 +1,176 @@
+/* TODO: Example 02 (Activity 3) CSS goes here */
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+nav {
+    border-bottom: 1px solid lightgrey;
+    padding: .5rem;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: 0;
+    margin-right: .5rem;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix2 {
+    overflow: auto;
+}
+
+.clearfix3 {
+    display: flow-root;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    counter-reset: article;
+}
+
+/* Styling Links */
+nav a:link, nav a:visited, nav a:active {
+    text-decoration: none;
+    color: rgb(161, 0, 0);
+}
+
+nav a:hover {
+    color: rgb(223, 0, 0);
+}
+
+footer {
+    margin: 2rem .5rem;
+    padding: .5rem;
+    border-top: 1px solid lightgrey;
+}
+
+/* Styling images */
+
+img {
+    max-width: 500px;
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: .75rem;
+}
+
+/* Styling articles */
+
+article > h1::before {
+    counter-increment: article;
+    content: "Article " counter(article) ": ";
+    color: rgb(161, 0, 0);
+}
+
+/* Styling circles */
+
+.circle {
+    border-radius: 100px;
+    float: left;
+    background-color: rgb(77, 0, 0);
+    color: white;
+    font-size: 2rem;
+    width: 200px;
+    height: 200px;
+    margin: .5rem;
+    text-align: center;
+}
+
+.vcenter1 {
+    line-height: 200px;
+}
+
+.vcenter2 > .circle::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.vcenter3 > .circle {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
+.vcenter4 > div {
+    line-height: 200px;
+    margin: 0 calc((100% - 800px) / 8);
+}
+
+/* Equal-height columns */
+
+.column {
+    float: left;
+    padding: 10px;
+    color: white;
+}
+
+.left-col {
+    background-color: rgb(201, 119, 119);
+    width: 25%;
+    padding: 10px;
+}
+
+.middle-col {
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(77, 0, 0);
+}
+
+.right-col {
+    width: 25%;
+    padding: 10px;
+    background-color: rgb(201, 119, 119);
+}
+
+.equal-height1 {
+    display: table;
+}
+
+.equal-height1 .column {
+    float: none;
+    display: table-cell;
+}
+
+.equal-height2 {
+    overflow: hidden;
+}
+
+.equal-height2 .column {
+    padding-bottom: 999999px;
+    margin-bottom: -999999px;
+}
+
+/* Multi-column text */
+
+.multi-column {
+    columns: 3;
+    column-gap: 2rem;
+}
